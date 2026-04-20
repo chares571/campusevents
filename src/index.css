@@ -1,0 +1,91 @@
+:root {
+  --bg: #f5f7f1;
+  --bg-soft: #edf3e3;
+  --surface: rgba(255, 252, 244, 0.92);
+  --surface-strong: #ffffff;
+  --text: #1f2a1f;
+  --muted: #5f6e60;
+  --border: rgba(38, 87, 58, 0.14);
+  --green: #1f6f43;
+  --green-deep: #174f31;
+  --yellow: #f3b431;
+  --yellow-soft: #fff0bf;
+  --red: #bf3f37;
+  --red-soft: #fde0db;
+  --shadow: 0 22px 60px rgba(27, 54, 34, 0.12);
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-sm: 12px;
+  --sans: "Segoe UI", "Trebuchet MS", sans-serif;
+  --heading: Georgia, "Times New Roman", serif;
+}
+
+body.dark {
+  --bg: #0f1711;
+  --bg-soft: #142019;
+  --surface: rgba(21, 31, 24, 0.92);
+  --surface-strong: #18261d;
+  --text: #eef5ec;
+  --muted: #b5c8b5;
+  --border: rgba(243, 180, 49, 0.16);
+  --green: #5bc17f;
+  --green-deep: #dff5e6;
+  --yellow: #f0c55d;
+  --yellow-soft: rgba(240, 197, 93, 0.14);
+  --red: #ff8278;
+  --red-soft: rgba(255, 130, 120, 0.16);
+  --shadow: 0 22px 60px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  background:
+    radial-gradient(circle at top left, rgba(31, 111, 67, 0.16), transparent 32%),
+    radial-gradient(circle at top right, rgba(243, 180, 49, 0.22), transparent 26%),
+    linear-gradient(180deg, var(--bg-soft), var(--bg));
+  color: var(--text);
+  min-height: 100vh;
+}
+
+body.dark {
+  background:
+    radial-gradient(circle at top left, rgba(91, 193, 127, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(240, 197, 93, 0.14), transparent 22%),
+    linear-gradient(180deg, #0d140f, var(--bg));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
